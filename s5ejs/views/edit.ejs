@@ -1,0 +1,8 @@
+<%include partials/header %>
+<h1>Edit TO DO item #<%= id_ejs %></h1>
+<form action="/todos/<%= id_ejs %>?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT" />
+    <div>Name: <input type="name" name="name" value=<%= nume_ejs%>></div>
+    <div>Priority: <input type="priority" name="priority" value=<%= prioritate_ejs%>></div>
+    <input type="submit" name="Edit">
+</form>

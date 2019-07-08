@@ -1,0 +1,28 @@
+kashann:~/workspace/TIC/s9 $ npm install ejs --save
+s9-tic-auth@1.0.0 /home/ubuntu/workspace/TIC/s9
+└── ejs@2.6.1 
+
+npm WARN s9-tic-auth@1.0.0 No description
+npm WARN s9-tic-auth@1.0.0 No repository field.
+kashann:~/workspace/TIC/s9 $ nodemon index.js
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node index.js`
+server started
+^Ckashann:~/workspace/TIC/s9 $ npm install --save body-parser
+s9-tic-auth@1.0.0 /home/ubuntu/workspace/TIC/s9
+└── body-parser@1.18.3 
+
+npm WARN s9-tic-auth@1.0.0 No description
+npm WARN s9-tic-auth@1.0.0 No repository field.
+kashann:~/workspace/TIC/s9 $ nodemon index.js
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node index.js`
+server started
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+server started
+^Ckashann:~/workspace/TIC/s9 $ npm install --save firebase-admin

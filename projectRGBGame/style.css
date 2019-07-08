@@ -1,0 +1,66 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+#container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.1;
+    background: teal;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#colorDisplay{
+font-size: 200%;
+}
+
+#stripe {
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.selected{
+    color: white;
+    background: teal;
+}
+
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: teal;
+    letter-spacing: 1px;
+    font-size: inherit;
+    outline: none;
+}
+
+#message{
+    display: inline-block;
+    width: 20%;
+}
+
+button:hover{
+    color: white;
+    background: teal;
+}

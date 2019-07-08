@@ -1,0 +1,12 @@
+<%include partials/header %>
+<h1>Set User</h1>
+<div>
+    <form action="/users/set" method="post">
+        User ID: <input type="userId" name="userId"><br>
+        First Name: <input type="firstName" name="firstName"><br>
+        Last Name: <input type="lastName" name="lastName"><br>
+        Age: <input type="age" name="age"><br>
+        <input type="submit" name="Edit">
+</div>
+<div> <%= echo_ejs %> </div>
+</form>

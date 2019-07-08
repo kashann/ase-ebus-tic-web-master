@@ -1,0 +1,15 @@
+{
+  "name": "myfirstapp",
+  "version": "1.0.0",
+  "description": "prima mea app in node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrei Marin",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

@@ -1,0 +1,10 @@
+<%include partials/header %>
+<h1>by Country</h1>
+<ul>
+    <% dataSet.forEach(function(child){ %>
+        <li>
+            <%= child.firstName + " " + child.lastName + " from " %>
+            <strong><%= child.address.country %></strong>
+        </li> 
+    <% }); %>
+</ul>

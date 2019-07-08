@@ -1,0 +1,18 @@
+npm install -g vue-cli
+vue init webpack
+y
+vue-basics
+A Vue.js project
+KN
+standalone
+y
+n
+n
+n
+npm
+
+
+npm run dev
+
+//adaug in package.json
+webpack-dev-server --inline --progress --port 8080 --host 0.0.0.0 --config build/webpack.dev.conf.js --public $C9_HOSTNAME

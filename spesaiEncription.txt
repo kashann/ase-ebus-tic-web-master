@@ -1,0 +1,22 @@
+openssl genrsa -out private_key.pem 2048
+cat private_key.pem
+openssl rsa -in private_key.pem -outform PEM -pubout -out public_key.pem
+cat private_key.pem
+
+echo 'Mesaj care va fi criptat' > secret.txt
+openssl rsautl -encrypt -pubin -inkey public_key.pem -in secret.txt -out secret.enc
+cat secret.enc
+openssl rsautl -decrypt -inkey private_key.pem -in secret.enc
+
+echo 'Continut text pentru exemplificare' > file.txt
+md5sum file.txt > file.txt.md5
+cat file.txt.md5
+
+md5sum -c file.txt.md5
+echo "c" >> file.txt
+md5sum file.txt > file.txt.md5.new
+cat file.txt.md5.new
+
+shasum -a 256 file.txt > file.txt.sha256
+cat file.txt.sha256
+shasum -c file.txt.sha256

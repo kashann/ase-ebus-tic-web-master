@@ -1,0 +1,17 @@
+<%include partials/header %>
+<h1>Lista:</h1>
+<ul>
+    <% for(var i=0; i<list_ejs.length; i++) { %>
+        <li>
+                <%= list_ejs[i] %>
+                <button onclick="location.href='/todos/<%= i %>/edit';">Edit</button>
+                <form method="post" action="/todos/<%= i %>?_method=DELETE">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="submit" name="Delete" value="Delete">
+                </form>
+        </li>
+    <% } %>
+</ul>
+
+
+
